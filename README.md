@@ -36,24 +36,18 @@ cd youtube-filter
 Install dependencies:
 
 ``` bash
-Copy
-Edit
 npm install
 ```
 
 Create a .env file in the root directory:
 
 ``` bash
-Copy
-Edit
 touch .env
 ```
 
 Add the following to your .env file:
 
 ``` env
-Copy
-Edit
 OPENAI_API_KEY=your_openai_api_key
 YOUTUBE_API_KEY=your_youtube_api_key
 ```
@@ -65,16 +59,12 @@ Replace your_openai_api_key and your_youtube_api_key with your actual keys.
 To run the app:
 
 ``` bash
-Copy
-Edit
 node index.js
+```
 
-``` 
 You'll see:
 
 ``` yaml
-Copy
-Edit
 Welcome
 Write your YouTube query:
 Type your search (e.g. cloud computing basics), and after a short delay, a new tab in your default browser will open displaying 5 YouTube results filtered to show only IT-related content.
