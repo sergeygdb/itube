@@ -29,7 +29,7 @@ The application fetches YouTube search results for a given query and uses the Op
 
 Clone the repository:
 
-```bash
+bash
 git clone https://github.com/sergeygdb/youtube-filter.git
 cd youtube-filter
 Install dependencies:
