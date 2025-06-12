@@ -67,5 +67,5 @@ You'll see:
 ``` yaml
 Welcome
 Write your YouTube query:
-Type your search (e.g. cloud computing basics), and after a short delay, a new tab in your default browser will open displaying 5 YouTube results filtered to show only IT-related content.
 ```
+Type your search (e.g. cloud computing basics), and after a short delay, a new tab in your default browser will open displaying 5 YouTube results filtered to show only IT-related content.
