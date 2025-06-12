@@ -24,7 +24,7 @@ async function callOpenAI(youtubeSearch) {
     const titles = await getYoutubeVideoTitles(all);
 
     const messages = [
-        { role: 'system', content: "I’ll send you a list of 5 YouTube video titles delimited by ||. For each title, return true if it’s in the IT category, and false if it’s not. If unsure, return false. Example response: [true, false, true, false, true]"},
+        { role: 'system', content: "I’ll send you a list of 5 YouTube video titles delimited by ||. For each title, return true if it’s in the IT, and false if it’s not. If unsure, return false. Example response: [true, false, true, false, true]"},
         { role: 'user', content: titles.join('||') }
     ];
 
