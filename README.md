@@ -65,8 +65,8 @@ node index.js
 You'll see:
 
 ``` yaml
-Welcome
-Write your YouTube query:
+Welcome! Type 'exit' at any time to close the application.
+Write your youtube query :
 ```
 Type your search (e.g. cloud computing basics), and after a short delay, a new tab in your default browser will open displaying 5 YouTube results filtered to show only IT-related content.
 
