@@ -27,7 +27,7 @@ async function searchYouTube(query) {
         return videoResults;
 
     } catch (error) {
-        console.error(colors.red('Error fetching data from YouTube API: ', error));
+        console.error(colors.red('Error fetching data from YouTube API'));
         return [];
     }
 }

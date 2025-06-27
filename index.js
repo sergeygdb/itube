@@ -24,8 +24,11 @@ async function main() {
             let youtubeSearch = await searchYouTube(userInput);
 
 
-            // condition on the youtube search for later 
-            if (youtubeSearch.length > 1) {
+            // the condition here is strange. Sometimes when we wait to long and don't touch the terminal for a while, 
+            // something happens and when we enter something as input text, a strange error occurs 
+            // -> AxiosError: write ECONNABORTED
+            
+            if (youtubeSearch === 'Error fetching data from YouTube API') {
                 youtubeSearch = await searchYouTube(userInput);
             }
 
