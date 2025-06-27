@@ -54,6 +54,40 @@ YOUTUBE_API_KEY=your_youtube_api_key
 
 Replace your_openai_api_key and your_youtube_api_key with your actual keys.
 
+## Enabling API Keys
+
+### 1. OpenAI API Key
+
+To use the OpenAI API, you must create an API key and ensure billing is enabled:
+
+Go to https://platform.openai.com/account/api-keys.
+
+Log in or sign up for an OpenAI account.
+
+Navigate to https://platform.openai.com/account/billing.
+
+Add a payment method and deposit at least $5 to activate API access (this is required for all new accounts).
+
+Once billing is set up, return to the API Keys page and click Create new secret key.
+
+Copy the key and paste it into your .env file
+
+### 2. YouTube Data API Key
+
+To get a YouTube API key:
+
+Go to the Google Cloud Console : https://console.cloud.google.com/
+
+Navigate to APIs & Services > Library.
+
+Search for YouTube Data API v3 and click Enable.
+
+Go to Credentials.
+
+Click Create Credentials > API key.
+
+Copy the generated key and add it to your .env file
+
 ## Usage
 
 To run the app:
