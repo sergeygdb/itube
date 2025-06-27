@@ -1,9 +1,7 @@
-import { filterYoutubeSearchWithApiCall } from "./openai.js"
 import { writeFile } from 'fs/promises';
 
 
-async function createIndexHTMLFile(youtubeSearch) {
-    const data = await filterYoutubeSearchWithApiCall(youtubeSearch)
+async function createIndexHTMLFile(data) {
     const filePath = "index.html";
     const contentBegin = '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>YouTube Video Player</title><style>body, html {margin: 0; padding: 0; height: 100%;} iframe {border: none; width: 100%; height: 100%;}</style></head><body>'
 

@@ -1,4 +1,3 @@
-import { searchYouTube } from './youtube.js'; 
 import OpenAI from "openai";
 import colors from 'colors';
 import dotenv from 'dotenv';
@@ -19,12 +18,11 @@ async function getYoutubeVideoTitles(objectVideos) {
 
 async function callOpenAI(youtubeSearch) {
 
-    const all = await searchYouTube(youtubeSearch);
 
-    const titles = await getYoutubeVideoTitles(all);
+    const titles = await getYoutubeVideoTitles(youtubeSearch);
 
     const messages = [
-        { role: 'system', content: "I’ll send you a list of 5 YouTube video titles delimited by ||. For each title, return true if it’s in the IT, and false if it’s not. If unsure, return false. Example response: [true, false, true, false, true]"},
+        { role: 'system', content: "I’ll send you a list of 5 YouTube video titles delimited by ||. For each title, return true if it’s in the IT, and false if it’s not. If unsure, return false. If it's related to mobile gaming, gaming return false. Example response: [true, false, true, false, true]"},
         { role: 'user', content: titles.join('||') }
     ];
 
@@ -35,13 +33,13 @@ async function callOpenAI(youtubeSearch) {
 
     const completionText = completion.choices[0].message.content;
 
-    return {all, completionText};
+    return {youtubeSearch, completionText};
 }
 
 
 async function filterYoutubeSearchWithApiCall(youtubeSearch){
     const data = await callOpenAI(youtubeSearch);
-    return data.all.filter((_, index) => JSON.parse(data.completionText)[index]);
+    return data.youtubeSearch.filter((_, index) => JSON.parse(data.completionText)[index]);
 }
 
 

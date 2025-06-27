@@ -30,8 +30,8 @@ The application fetches YouTube search results for a given query and uses the Op
 Clone the repository:
 
 ``` bash
-git clone https://github.com/sergeygdb/youtube-filter.git
-cd youtube-filter
+git clone https://github.com/sergeygdb/itube.git
+cd itube
 ```
 Install dependencies:
 
@@ -69,3 +69,45 @@ Welcome
 Write your YouTube query:
 ```
 Type your search (e.g. cloud computing basics), and after a short delay, a new tab in your default browser will open displaying 5 YouTube results filtered to show only IT-related content.
+
+
+## Quick Launch via Batch File
+
+To make launching the app easier, you can use a Windows batch file.
+
+
+### Step 1: Create itube.bat
+
+In the root directory of your project, create a file named itube.bat with the following contents:
+
+``` bat
+@echo off
+cd /d "C:\your\path"
+npm run start
+pause
+```
+
+Make sure the path in the script matches your actual project folder location.
+
+### Step 2: Add itube.bat to the System PATH
+
+To be able to run itube.bat from anywhere in the command prompt:
+
+Copy itube.bat to a folder you control (e.g., C:\Scripts).
+
+Press Win + R, type sysdm.cpl, and hit Enter.
+
+Go to the Advanced tab and click on Environment Variables.
+
+Under System variables, find the Path variable and click Edit.
+
+Click New, then add the path to the folder containing your itube.bat (e.g., C:\your\path\itube.bat).
+
+Click OK to save and close all dialogs.
+
+
+**Now, you can open any command prompt and simply type:**
+
+``` bash
+itube
+```
