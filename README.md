@@ -104,6 +104,12 @@ Write your YouTube query:
 ```
 Type your search (e.g. cloud computing basics), and after a short delay, a new tab in your default browser will open displaying 5 YouTube results filtered to show only IT-related content.
 
+## Demo
+
+A quick Demo of the app can be found on my linkedin profile : 
+
+https://www.linkedin.com/posts/sergey-popov-ab0258201_just-finished-the-first-version-of-itube-activity-7344518662235516928-4Cp0?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADN4-SQB6RO6nOaLfHa15shySFrD6qhfyg4
+
 
 ## Quick Launch via Batch File
 
